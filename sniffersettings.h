@@ -3,6 +3,9 @@
 
 #include <QWidget>
 #include "interfaces/isniffersettings.h"
+#include <QSettings>
+#include <QCoreApplication>
+
 namespace Ui {
 class SnifferSettings;
 }
@@ -19,10 +22,13 @@ public:
     void setCurrentSettings();
     void setDefaultSettings();
     void applySettings();
+    void setSettingsName(QString name);
 
     
 private:
     Ui::SnifferSettings *ui;
+
+    void setSettings(QSettings &settings);
 };
 
 #endif // SNIFFERSETTINGS_H

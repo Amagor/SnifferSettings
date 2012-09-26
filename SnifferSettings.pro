@@ -5,7 +5,6 @@
 #-------------------------------------------------
 
 QT       += core gui
-include(../libs.pri)
 
 TARGET = SnifferSettings
 TEMPLATE = lib

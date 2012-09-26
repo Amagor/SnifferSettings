@@ -16,6 +16,7 @@ SnifferSettings::~SnifferSettings()
 QWidget* SnifferSettings::getWidget(){
     return this;
 }
+
 void SnifferSettings::setCurrentSettings(){
 
 }
@@ -24,6 +25,11 @@ void SnifferSettings::setDefaultSettings(){
 }
 void SnifferSettings::applySettings(){
 
+}
+
+void SnifferSettings::setSettingsName(QString name)
+{
+    ui->settingsName->setText(name);
 }
 
 QT_BEGIN_NAMESPACE
