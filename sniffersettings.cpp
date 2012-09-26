@@ -14,7 +14,7 @@ SnifferSettings::~SnifferSettings()
 }
 
 QWidget* SnifferSettings::getWidget(){
-
+    return this;
 }
 void SnifferSettings::setCurrentSettings(){
 
